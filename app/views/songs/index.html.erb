@@ -1,0 +1,4 @@
+<h1> <%=if !@models.empty? then @models.first.class end%> </h1>
+<% @models.each do |model|%>
+<p><%= model.name %></p>
+<%end%>
