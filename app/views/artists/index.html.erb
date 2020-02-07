@@ -1,0 +1,8 @@
+<h1> <%=if !@models.empty? then @models.first.class end%> </h1>
+<% @models.each do |model|%>
+<ul>
+    <li><%= model.name %></li>
+    <li><%= model.bio %></li>
+</ul>
+
+<%end%>

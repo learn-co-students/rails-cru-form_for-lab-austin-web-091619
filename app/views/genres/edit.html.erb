@@ -1,0 +1,8 @@
+<h1> <%= @model.class %> Form </h1>
+<%= form_for(@model) do |f| %>
+    <%= f.label :name %><br>
+    <%=f.text_field :name %><br>
+    
+    <%=f.submit %>
+    <%end %>
+    
